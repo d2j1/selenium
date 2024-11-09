@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -22,6 +23,8 @@ public class FirstTest {
     	
         // Initialize the WebDriver
         driver = new ChromeDriver();
+        
+//        driver = new FirefoxDriver(); we can also run the same code on the firefox also
         
         driver.get("https://www.google.com/"); 
         driver.manage().window().maximize(); // to open the browser in maximum window
